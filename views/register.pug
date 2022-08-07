@@ -1,0 +1,64 @@
+head
+    title Lifestyle Store
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+    link(rel='stylesheet' href='../static/style.css')
+body    
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='index.pug') LIFESTYLE STORE
+        div
+          ul.navbar-nav.navbar-right
+            li
+              a.glyphicon.glyphicon-user(href='#') SignUp
+            li
+              a.glyphicon.glyphicon-log-in(href='login.pug') Login
+    #banner_image.row.col-xs-12
+      div
+        .panel.panel-default.col-xs-3.container-fluid.sign
+          .panel-header
+            h1  SIGN UP
+          .panel-body
+            form(action='http://localhost:5000/register.pug' method='POST').form-group
+              div
+                input#firstname(type='text' name='firstname' placeholder='Firstname')
+              br
+              div
+                input#secondname(type='text' name='lastname' placeholder='Lastname')
+              br
+              div
+                input#Email(type='email' name='email' placeholder='Email')
+              br
+              div
+                input#pwd(type='password' name='password' placeholder='Confirm Password')
+              br
+              div
+                input#pwd(type='password' name='password2' placeholder='Re-Confirm Password')
+              br
+              div
+                input#num(type='tel' name='phone' placeholder='Mobile Number')
+              br
+              div
+                input#myaddress(type='text' name='address' placeholder='Address')
+              br
+              div
+                input#mycity(type='text' name='city' placeholder='City')
+              br
+              div
+                input#mypincode(type='tel' name='pincode' placeholder='Pincode')
+              br
+              div
+                input#mystate(type='text' name='state' placeholder='State')
+              //a.btn.btn-primary(href='login.pug') Submit
+              button(type='submit') Submit
+            .panel-footer
+                span.text-warning Already have an account?
+                a(href='login.pug') Login
+    div
+      footer(style='position:fixed;')
+        center Copyright &copy; Lifestyle Store.All Rights Reserved| Contact Us: +91 98484 84848
+    

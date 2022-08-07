@@ -1,0 +1,33 @@
+doctype html
+head
+  title Lifestyle Store
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+  link(rel='stylesheet' href='../static/style.css')
+body 
+  div
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='#') LIFESTYLE STORE
+        div
+          ul.navbar-nav.navbar-right
+            li
+              a.glyphicon.glyphicon-user(href='register.pug') SignUp
+            li
+              a.glyphicon.glyphicon-log-in(href='login.pug') Login
+  #banner_image.row.col-xs-12
+    .container
+      #banner_content
+        #banner_text
+          h1 We Sell Lifestyle
+          h6 Flat 40% OFF on premium brands
+        br
+        #banner_button
+          a.btn.btn-danger(href='login.pug')  Shop Now
+  div
+    footer(style='position:fixed;')
+      center Copyright &copy; Lifestyle Store.All Rights Reserved| Contact Us: +91 98484 84848

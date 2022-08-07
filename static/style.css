@@ -1,0 +1,75 @@
+a{
+    margin-left: 25px;
+}
+#banner_image{
+    padding-top: 5px;
+    padding-bottom: 50px;
+    height: 640px;
+    color: #f8f8f8;
+    background: url("img/backgroung_img1.jpg") no-repeat center center;
+    background-size: 100%;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+#banner_content{
+    position: relative;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    margin-bottom: 12%;
+    margin-top: 12%;
+    background-color: rgba(0,0,0,0.7);
+    max-width: 660px;
+    margin-left: 21%;
+    text-align: center;
+}
+
+footer{
+    padding: 10px;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px
+}
+.panel{
+    padding: 0px;
+    margin-bottom: 12%;
+    margin-top: 9%;
+    margin-left: 40%;
+    color: #1e4058;
+}
+.panel-header{
+    color: whitesmoke;
+    background-color: #5b5bcf;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    font-family: unset;
+}
+.sign{
+    margin-top: 0%;
+    margin-left: 40%;
+}
+.jumbotron{
+    margin-top: 70px;
+    padding-top: 15px;
+    width: 1200px;
+}
+.margin-zero{
+    margin: 0px;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    height: 240px;
+    width: 100%;
+}
+.table-style{
+    margin-top: 100px;
+}
+.get-style{
+    margin-left: 20px;
+    width: 72%;
+}
+.underlinehatao a{
+    text-decoration: none;
+}
+

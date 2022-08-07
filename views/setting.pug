@@ -1,0 +1,37 @@
+head
+    title Lifestyle Store
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+    link(rel='stylesheet' href='../static/style.css')
+body   
+    .navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href='products.pug') LIFESTYLE STORE
+            div
+                ul.navbar-nav.navbar-right
+                    li
+                        a.glyphicon.glyphicon-eye-open(href='products.pug') Products
+                    li
+                        a.glyphicon.glyphicon-shopping-cart(href='cart.pug') Cart
+                    li
+                        a.glyphicon.glyphicon-cog(href='#') Setting
+                    li
+                        a.glyphicon.glyphicon-log-out(href='index.pug') Logout
+    .container
+        .panel.panel-default.get-style
+            .panel-header
+                h2 Change Password
+            .panel-body
+                input#oldpassword(type='password' name='oldpass' placeholder='Old Password')
+                input#newpassword(type='password' name='newpass' placeholder='New Password')
+                input#renewpassword(type='password' name='renewpass' placeholder='Re-type New Password')
+                br
+                br
+                a.btn.btn-primary(href='products.pug') Change
+    div
+        footer(style='position: absolute;')
+            center Copyright &copy; Lifestyle Store.All Rights Reserved| Contact Us: +91 98484 84848

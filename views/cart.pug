@@ -1,0 +1,44 @@
+head
+  title Lifestyle Store
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+  link(rel='stylesheet' href='../static/style.css')
+body 
+  .navbar.navbar-inverse.navbar-fixed-top
+    .container
+      .navbar-header
+        a.navbar-brand(href='products.pug') LIFESTYLE STORE
+      div
+        ul.navbar-nav.navbar-right
+          li
+            a.glyphicon.glyphicon-eye-open(href='products.pug') Products
+          li
+            a.glyphicon.glyphicon-shopping-cart(href='#') Cart
+          li
+            a.glyphicon.glyphicon-cog(href='setting.pug') Setting
+          li
+            a.glyphicon.glyphicon-log-out(href='index.pug') Logout
+  .container
+    table.table.table-striped.table-hover.table-responsive.table-style.text-center
+      tr
+        th.text-center Item Number
+        th.text-center Item Name
+        th.text-center Price
+        th.text-center
+      tr
+        td -
+        td -
+        td -
+        td
+      tr
+        td
+        td Total
+        td Rs.0
+        td
+          a.btn.btn-primary.btn-block(href='success.php' style='padding-left: 0px;margin-left: 0px;') Confirm Order
+  div
+    footer(style='position: absolute;')
+      center Copyright &copy; Lifestyle Store.All Rights Reserved| Contact Us: +91 98484 84848

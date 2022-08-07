@@ -1,0 +1,125 @@
+head
+  title Lifestyle Store
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+  link(rel='stylesheet' href='../static/style.css')
+  script.
+    let name = #{firstname}
+body 
+    .navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href='products.pug') LIFESTYLE STORE
+            div
+                ul.navbar-nav.navbar-right
+                    li
+                        a.glyphicon.glyphicon-eye-open(href='#') Products
+                    li
+                        a.glyphicon.glyphicon-shopping-cart(href='cart.pug') Cart
+                    li
+                        a.glyphicon.glyphicon-cog(href='setting.pug') Setting
+                    li
+                        a.glyphicon.glyphicon-log-out(href='index.pug') Logout
+    .container
+        .jumbotron
+            h1 Welcome to our Lifestyle store
+            p  We have the best cameras,watches and shirts for you.No need to hunt around,we have all in one place.
+        .container
+            .row.text-center
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail1.pug") 
+                        .thumbnail
+                            img.img-responsive(src='../static/img/cannonEOS.jpg' alt='CANNON EOS')
+                            .caption
+                                h3 Cannon EOS
+                                p Price: $158
+                                p #{firstname}
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail2.pug")    
+                        .thumbnail
+                            img.img-responsive(src='../static/img/sony dslr.jpg' alt='Sony DSLR')
+                            .caption
+                                h3 SONY DSLR A438
+                                p Price: $138.2
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail3.pug")
+                        .thumbnail
+                            img.img-responsive(src='../static/img/nikon dslr.jpg' alt='Nikon DSLR')
+                            .caption
+                                h3 NIKON DSLR 720
+                                p Price: $252.2
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail4.pug")
+                        .thumbnail
+                            img.img-responsive(src='../static/img/Olympus dslr.jpg' alt='Olympus DSLR')
+                            .caption
+                                h3 Olympus DSLR 1080
+                                p Price: $552.2
+            .row.text-center
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail5.pug")
+                        .thumbnail
+                            img.img-responsive(src='../static/img/titan.jpg' alt='Titan Watch')
+                            .caption
+                                h3 Titan Model #301
+                                p Price: $226.2
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail6.pug")
+                        .thumbnail
+                            img.img-responsive(src='../static/img/fossil watch.jpg' alt='Fossil Watch')
+                            .caption
+                                h3 Fossil Model #D02
+                                p Price: $296.2
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail7.pug")
+                        .thumbnail
+                            img.img-responsive(src='../static/img/fossil premium.jpg' alt='Fossil Premium Model')
+                            .caption
+                                h3 Fossil Premium 
+                                p Price: $580.6
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail8.pug")
+                        .thumbnail
+                            img.img-responsive(src='../static/img/apple smart watch.jpg' alt='Apple Smart Watch')
+                            .caption
+                                h3 Apple Watch Series 7
+                                p Price: $896.2
+            .row.text-center
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail9.pug")
+                        .thumbnail
+                            img.img-responsive(src='../static/img/H & W.jpg' alt='H & W shirt')
+                            .caption
+                                h3 H &amp; M Shirt
+                                p Price: $52.2
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail10.pug")
+                        .thumbnail
+                            img.img-responsive(src='../static/img/Nimble Made.jpg' alt='Nimble Made')
+                            .caption
+                                h3 Nimble Made Shirt
+                                p Price: $57.8
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail11.pug")
+                        .thumbnail
+                            img.img-responsive(src='../static/img/Check B&W.jpg' alt='B&W shirt')
+                            .caption
+                                h3 Check B&amp;W Shirt
+                                p Price: $37.2
+                .col-md-3.col-sm-6
+                    a.underlinehatao(href="/productdetail12.pug")
+                        .thumbnail
+                            img.img-responsive(src='../static/img/4 combo.jpg' alt='4 Combo shirt')
+                            .caption
+                                h3 4 Combo Shirt Best offer
+                                p Price: $40
+    div
+        footer
+            center Copyright &copy; Lifestyle Store.All Rights Reserved| Contact Us: +91 98484 84848
+
+    script.
+        //alert("logged in as "+name);
+        

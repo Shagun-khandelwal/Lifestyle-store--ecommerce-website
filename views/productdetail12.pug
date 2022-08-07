@@ -1,0 +1,53 @@
+head
+  title Lifestyle Store
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' href='../static/style-productdetail.css')
+body 
+    .navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href='products.pug') LIFESTYLE STORE
+            div
+                ul.navbar-nav.navbar-right
+                    li
+                        a.glyphicon.glyphicon-eye-open(href='products.pug') Products
+                    li
+                        a.glyphicon.glyphicon-shopping-cart(href='cart.pug') Cart
+                    li
+                        a.glyphicon.glyphicon-cog(href='setting.pug') Setting
+                    li
+                        a.glyphicon.glyphicon-log-out(href='index.pug') Logout
+    .container 
+        div#whole
+            div#imagediv 
+                img#image(src='../static/img/4 combo.jpg', alt="Image Loading Error")
+            div#detailpart
+                h1#searchname 4 Combo Shirt NetPlay - Best Offer | All Size Available
+                h4#ratings 4.0 Stars (1482 Reviews)
+                br
+                br
+                h2#amount $40
+                p#companypara NetPlay holds a good place on the Shirt marketing now a days. This is special diwali bumper offer with 4 combo netplay shirt with fully verified tags.
+                form(action="http://localhost:5000/cart.pug", method="post")
+                    span NET QTY 
+                    select#quantity(name="quantity")
+                        option(value="1" selected="") 1  
+                        option(value="2") 2  
+                        option(value="3") 3  
+                        option(value="4") 4 
+                        option(value="5") 5  
+                        option(value="6") 6  
+                        option(value="7") 7  
+                        option(value="8") 8  
+                        option(value="9") 9  
+                        option(value="10") 10  
+                    br
+                    br
+                    br
+                    button#addtocart(type="submit") ADD TO CART  
+    
